@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 CANVAS</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="display">
+      <div class="header">DrawMania</div>
+      <div class="controls">
+        <div class="buttons" id="button1">
+          <label for="Brush Size"
+            >Thickness<ion-icon
+              name="pencil-outline"
+              size="large"
+            ></ion-icon></label
+          ><br />
+          <br />
+          <input
+            type="range"
+            name="size"
+            value="5px"
+            id="Bsize"
+            min="2px"
+            max="50px"
+          />
+        </div>
+        <div class="buttons" id="button2">
+          <label for="Brush_color"> color </label><br />
+          <br />
+          <input type="color" name="brush_color" id="Bcolor" />
+        </div>
+        <div class="buttons" id="button3">
+          <label for="erase">Erasser</label><br />
+          <br /><ion-icon name="albums-outline" size="large"></ion-icon>
+        </div>
+        <div class="buttons" id="button4"></div>
+        <div class="buttons" id="button5"></div>
+      </div>
+      <div class="board">
+        <canvas id="draw" width="800" height="800"></canvas>
+      </div>
+
+      <footer>
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+          <li>
+            <a href="https://www.facebook.com/shivam.sisodia.54/">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/shivam-sisodia-80495a204/">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/shivam.sisodia.007/">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/Shivam7Sisodia">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+        <p>@2021 SHIVAM MEGAMART | All Rights Reserved</p>
+      </footer>
+    </div>
+    <!-- for icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
