@@ -2,11 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flex Panels 💪</title>
     <link
       href="https://fonts.googleapis.com/css?family=Amatic+SC"
       rel="stylesheet"
       type="text/css"
+      crossorigin="anonymous"
     />
 
     <link rel="stylesheet" href="flexPanel.css" />
@@ -40,22 +42,6 @@
       </div>
     </div>
 
-    <script>
-      const panels = document.querySelectorAll(".panel");
-
-      function toggleOpne() {
-        this.classList.toggle("open");
-        this.classList.toggle("open-active");
-      }
-      function toggleActive(e) {
-        if (e.propertyName === "flex-grow") {
-          this.classList.toggle("opne-active");
-        }
-      }
-      panels.forEach((panel) => panel.addEventListener("click", toggleOpne));
-      panels.forEach((panel) =>
-        panel.addEventListener("transistionend", toggleActive)
-      );
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
